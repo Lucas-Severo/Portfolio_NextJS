@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: lightgray;
+    background-color: #e87461;
     position: fixed;
     width: 100%;
     z-index: 1;

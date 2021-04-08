@@ -1,0 +1,17 @@
+.projectsSection {
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.sectionName {
+    text-align: center;
+}
+
+.projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    justify-items: center;
+    gap: 20px;
+}

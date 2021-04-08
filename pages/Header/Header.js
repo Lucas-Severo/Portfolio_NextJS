@@ -6,10 +6,10 @@ export default function Header() {
             <header className={styles.header}>
                 <div>Lucas Rodrigues Severo</div>
                 <ul className={styles.menu}>
-                    <li className={styles.item}>Home</li>
+                    <li className={styles.item}><a href="#header">Home</a></li>
                     <li className={styles.item}>Projetos</li>
-                    <li className={styles.item}>Contato</li>
                     <li className={styles.item}>Sobre</li>
+                    <li className={styles.item}>Contato</li>
                 </ul>
             </header>
             <section className={styles.mainSection}>

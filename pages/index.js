@@ -8,6 +8,8 @@ export default function Home() {
     <div className={styles.container}>
       <Header/>
       <Projetos/>
+      a
+      sdfasd
     </div>
   )
 }
