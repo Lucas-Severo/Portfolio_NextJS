@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #576ca8;
+    background-color: #6d696a;
+    color: #e2dadb;
     position: fixed;
     width: 100%;
     z-index: 1;

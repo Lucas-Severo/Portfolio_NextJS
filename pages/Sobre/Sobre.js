@@ -1,4 +1,7 @@
 import styles from './Sobre.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import {faArrowDown} from '@fortawesome/free-solid-svg-icons'
 
 export default function Sobre() {
     return (
@@ -9,8 +12,12 @@ export default function Sobre() {
                     <p className={styles.name}>Lucas Rodrigues Severo</p>
                     <p className={styles.aboutSection}>Cursando Análise e desenvolvimento de sistemas - Instituto Federal de Mato Grosso do Sul(IFMS)</p>
                     <div className={styles.socialMedia}>
-                        <a href="https://github.com/Lucas-Severo" aria-label="Github" target="_blank" rel="noreferrer"><i class="fab fa-github social"></i></a>
-                        <a href="https://www.linkedin.com/in/lucas-rodrigues-severo-aa47a219b/" aria-label="Linkedin" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in social"></i></a>
+                        <a href="https://github.com/Lucas-Severo" aria-label="Github" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
+                        <a href="https://www.linkedin.com/in/lucas-rodrigues-severo-aa47a219b/" aria-label="Linkedin" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
+                    </div>
+                    <div className={styles.btnVerMais}>
+                        <p className={styles.btnVerMaisTexto}>Ver Mais</p>
+                        <FontAwesomeIcon icon={faArrowDown}/>
                     </div>
             </div>
         </>

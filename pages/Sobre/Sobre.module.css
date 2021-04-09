@@ -2,6 +2,7 @@
     background-color: #302b27;
     height: 100vh;
     color: #f5f3f5;
+    position: relative;
 }
 
 .sectionTitle {
@@ -34,11 +35,27 @@
 
 .socialMedia {
     font-size: 30px;
-    cursor: pointer;
     padding: 0px 10px;
     color: black;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 
-.social:hover {
+.socialMedia a:hover {
+    cursor: pointer;
     color: rgba(144, 0, 0, 0.8);
+}
+
+.btnVerMais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100px;
+    height: 30px;
+    gap: 5px;
+    background-color: #8b622061;
+    color: #eecf6d;
+    cursor: pointer;
 }

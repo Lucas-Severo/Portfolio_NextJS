@@ -7,6 +7,9 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Portfólio</title>
+      </Head>
       <Header/>
       <Projetos/>
       <Sobre/>

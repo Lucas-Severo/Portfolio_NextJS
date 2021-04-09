@@ -1,6 +1,7 @@
 .projectsSection {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 70px;
+    position: relative;
 }
 
 .sectionName {
@@ -9,9 +10,10 @@
 
 .projectsContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
     width: 80%;
     margin: 0 auto;
+    justify-content: center;
     justify-items: center;
     gap: 20px;
 }
