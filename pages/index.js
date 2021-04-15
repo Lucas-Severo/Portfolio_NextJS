@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from './Header/Header'
 import Projetos from './Projetos/Projetos'
 import Sobre from './Sobre/Sobre'
+import Contato from './Contato/Contato'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Header/>
       <Projetos/>
       <Sobre/>
+      <Contato/>
     </div>
   )
 }

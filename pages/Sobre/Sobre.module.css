@@ -1,8 +1,9 @@
 .sobreSection {
     background-color: #302b27;
-    height: 100vh;
+    min-height: 100vh;
     color: #f5f3f5;
     position: relative;
+    padding: 20px;
 }
 
 .sectionTitle {
@@ -58,4 +59,64 @@
     background-color: #8b622061;
     color: #eecf6d;
     cursor: pointer;
+}
+
+.languagesContainer {
+    text-align: center;
+}
+
+.languages {
+    margin: 0 auto;
+    width: 250px;
+    display: grid;
+    grid-template-areas: 
+        "java github git ."
+        ". html css react"
+        "javascript vuejs node .";
+}
+
+.java {
+    grid-area: java;
+}
+
+.github {
+    grid-area: github;
+}
+
+.git {
+    grid-area: git;
+}
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}
+
+.react {
+    grid-area: react;
+}
+
+.javascript {
+    grid-area: javascript;
+}
+
+.vuejs {
+    grid-area: vuejs;
+}
+
+.node {
+    grid-area: node;
+}
+
+.language {
+    cursor: pointer;
+    padding-top: 5px;
+    font-size: 40px;
+}
+
+.language:hover {
+    color:rgba(200, 200, 144, 0.8);
 }
