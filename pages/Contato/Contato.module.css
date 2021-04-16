@@ -1,5 +1,5 @@
 .contatoContainer {
-    min-height: 92vh;
+    min-height: 94vh;
     background-color: #465362;
 }
 
@@ -53,4 +53,12 @@
     cursor: pointer;
     outline: none;
     font-weight: bold;
+}
+
+.inputError {
+    border: 1px solid #e5383b;
+}
+
+.formularioErro {
+    color: #e5383b;
 }

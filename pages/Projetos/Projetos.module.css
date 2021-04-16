@@ -8,6 +8,10 @@
     text-align: center;
 }
 
+.project {
+    cursor: pointer;
+}
+
 .projectsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
