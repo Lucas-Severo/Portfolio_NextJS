@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from './Header/Header'
+import HeaderCompleto from './Header/HeaderCompleto'
 import Projetos from './Projetos/Projetos'
 import Sobre from './Sobre/Sobre'
 import Contato from './Contato/Contato'
@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Portfólio</title>
       </Head>
-      <Header/>
+      <HeaderCompleto/>
       <Projetos/>
       <Sobre/>
       <Contato/>

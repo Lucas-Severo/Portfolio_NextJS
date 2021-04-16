@@ -1,5 +1,8 @@
+import Head from 'next/head'
 import ProjectApi from "../../src/core/api/ProjectApi"
 import {useState, useEffect} from 'react'
+import styles from './detalhe.module.css'
+import Header from '../Header/Header'
 
 export default function Post({ data }) {
 
@@ -9,16 +12,23 @@ export default function Post({ data }) {
     setProject(data)
   }, [])
 
-
   return (
-    <div>
-      <p>Nome: {project.name}</p>
-      <p>Finalizado em: {project.completedOn}</p>
-      <p>Criado por: {project.createdBy}</p>
-      <p>Link: <a target="blank" href={project.link}>{project.link}</a></p>
-      <p>Descrição: {project.description}</p>
-      <p>Categorias: {project.categories}</p>
-    </div>
+    <>
+      <Head>
+        <title>{data.name}</title>
+      </Head>
+      <Header/>
+      <div className={styles.container}>
+        <div className={styles.projectContainer}>
+          <p className={styles.title}>{project.name}</p>
+          <p>Finalizado em: {project.completedOn}</p>
+          <p>Criado por: {project.createdBy}</p>
+          <p>Link: <a target="blank" href={project.link}>{project.link}</a></p>
+          <p>Descrição: {project.description}</p>
+          <p>Categorias: {project.categories}</p>
+        </div>
+      </div>
+    </>
   )
 }
 

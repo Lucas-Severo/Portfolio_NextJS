@@ -41,7 +41,7 @@ export default (req, res) => {
       completedOn: "20 março 2020",
       categories: ["Extensão Web"],
       link: "https://github.com/Lucas-Severo/CovidCleaner",
-      description: "Uma extensão para google chrome que substitui a palavra covid com o símbolo da vacina"
+      description: "Uma extensão para google chrome que substitui a palavra covid pelo símbolo da vacina"
     }
   ]
   })
