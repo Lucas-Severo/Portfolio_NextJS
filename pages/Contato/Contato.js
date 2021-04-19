@@ -9,6 +9,7 @@ export default function Contato() {
     const [showErrorMessageNome, setShowErrorMessageNome] = useState(false)
     const [showErrorMessageEmail, setShowErrorMessageEmail] = useState(false)
     const [showErrorMessageAssunto, setShowErrorMessageAssunto] = useState(false)
+    const [errorMessageEmail, setErroMessageEmail] = useState('')
 
     const changeNome = (e) => {
         setNome(e.target.value)
@@ -39,6 +40,12 @@ export default function Contato() {
         }
         if(email.trim() == '') {
             setShowErrorMessageEmail(true)
+            setErroMessageEmail('Este Campo é Obrigatório')
+            formularioValido = false
+        }
+        else if(!verificarEmailValido(email.trim())) {
+            setShowErrorMessageEmail(true)
+            setErroMessageEmail('Use um endereço de e-mail válido')
             formularioValido = false
         }
         if(assunto.trim() == '') {
@@ -47,6 +54,11 @@ export default function Contato() {
         }
         limparErros()
         return formularioValido
+    }
+
+    const verificarEmailValido = (email) => {
+        const re = /\S+@\S+\.\S+/
+        return re.test(email)
     }
 
     const limparCampos = () => {
@@ -92,7 +104,7 @@ export default function Contato() {
                         onChange={changeEmail}/>
                     {
                         showErrorMessageEmail && 
-                        <p className={styles.formularioErro}>Este Campo é Obrigatório</p>
+                        <p className={styles.formularioErro}>{errorMessageEmail}</p>
                     }
                 </div>
                 <div>
