@@ -76,7 +76,7 @@ export default function Contato() {
     }
 
     return (
-        <div className={styles.contatoContainer}>
+        <div id="contatoSection" className={styles.contatoContainer}>
             <p className={styles.contatoTitle}>Contato</p>
             <div className={styles.formulario}>
                 <div>

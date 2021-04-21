@@ -15,7 +15,7 @@ export default function Sobre() {
 
     return (
         <>
-            <div className={styles.sobreSection}>
+            <div id="sobreSection" className={styles.sobreSection}>
                 <h1 className={styles.sectionTitle}>Sobre</h1>
                 <div className={styles.face}></div>
                 <p className={styles.name}>Lucas Rodrigues Severo</p>

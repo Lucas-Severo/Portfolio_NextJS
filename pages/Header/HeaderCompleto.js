@@ -5,7 +5,7 @@ import Header from './Header'
 
 export default function HeaderCompleto() {
     return (
-        <>
+        <div id="header">
             <Header/>
             <section className={styles.mainSection}>
                 <p className={styles.author}>Lucas Rodrigues Severo</p>
@@ -15,6 +15,6 @@ export default function HeaderCompleto() {
                     <FontAwesomeIcon icon={faDraftingCompass}/>    
                 </p>
             </section>
-        </>
+        </div>
     )
 }
